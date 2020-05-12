@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from './services/api'
 
-import "./styles.css";
+import "./styles.css"
 
 function App() {
   const [repositories, setRepositories] = useState([])
@@ -19,7 +19,7 @@ function App() {
       techs: ['Node.js', 'ReactJS']
     })
 
-    setRepositories([ ...repositories, response.data])
+    setRepositories([ ...repositories, response.data ])
   }
 
   async function handleRemoveRepository(id) {
